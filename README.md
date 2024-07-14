@@ -29,7 +29,7 @@ Also, if you want to avoid this 'hello' wake word completely then can update the
 
 
 ## Tip
-![alt sample demo](https://github.com/shadman/genai-voice-assistant/blob/main/img/pmodel-and-languages.png)
+![alt sample demo](https://github.com/shadman/genai-voice-assistant/blob/main/img/model-and-languages.png)
 
 
 
