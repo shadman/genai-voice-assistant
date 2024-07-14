@@ -3,11 +3,11 @@ GenAI Voice Assistant by using Gemini Prompts and Open AI TTS
 
 
 ## Install dependencies
-pip install google.generativeai
-pip install speech_recognition
-pip install pyaudio
-pip install openai
-pip install faster_whisper
+- pip install google.generativeai
+- pip install speech_recognition
+- pip install pyaudio
+- pip install openai
+- pip install faster_whisper
 
 ## API Keys
 Set Env or update API KEY on line number 30, file voice-assistant.py with yours
@@ -32,9 +32,10 @@ Also, if you want to avoid this 'hello' wake word completely then can update the
 ![alt sample demo](https://github.com/shadman/genai-voice-assistant/blob/main/img/model-and-languages.png)
 
 
-
 ## Some Helpful Links
-https://aistudio.google.com/
-https://platform.openai.com/
-https://platform.openai.com/docs/guides/text-to-speech
-https://colab.research.google.com/
+- https://aistudio.google.com/
+- https://platform.openai.com/
+- https://platform.openai.com/docs/guides/text-to-speech
+- https://colab.research.google.com/
+
+Cheers!
