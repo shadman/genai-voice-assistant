@@ -19,9 +19,9 @@ Set Env or update API KEY on line number 35, file voice-assistant.py with yours
 ## Run a program
 > python voice-assistant.py
 
-You have to say 'hello' first to ask every question, but this can be avoided except first question by commenting line 148-149
+You have to say 'hello' first to ask every question, but this can be avoided except the first question by commenting lines 148-149
 
-Also, if you want to avoid this 'hello' wake word completely then can update the call back function accordingly and remove 'listening_for_wake_word' parameters
+Also, if you want to avoid this 'hello' wake word completely then can update the callback function accordingly and remove the 'listening_for_wake_word' parameters
 
 
 ## Output : (Talk with you)
