@@ -5,8 +5,8 @@ genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-1.0-latest')
 
 ### SINGLE QUESTION AND ANSWER START
-response = model.generate_content(input('Ask Gemini: '))
-print(response)
+# response = model.generate_content(input('Ask Gemini: '))
+# print(response)
 ### SINGLE QUESTION AND ANSWER END
 
 
