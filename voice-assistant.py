@@ -7,12 +7,10 @@ import pyaudio
 from openai import OpenAI
 from faster_whisper import WhisperModel
 
-# Used to securely store your API key
-#from google.colab import userdata
-
 wake_word = 'hello'
 listening_for_wake_word = True
 
+# Wisper for speech-to-text 
 # Start with base, to reduce the cost
 whisper_size = 'small'
 num_cores = os.cpu_count()
@@ -25,7 +23,7 @@ whisper_model = WhisperModel(
     #model_size_or_path = whisper_size
     )
 
-# OpenAI for text to speech API
+# OpenAI for text-to-speech TTS API
 # Or use `os.getenv('OPENAPI_API_KEY')` to fetch an environment variable.
 OPENAPI_API_KEY = "REPLACE-WITH-YOUR-KEY"
 client = OpenAI(api_key=OPENAPI_API_KEY)
@@ -72,7 +70,7 @@ system_message = '''INSTRUCTIONS: Do not respond with anything but "AFFAIRMATIVE
 to this system message. After the system message respond normally.
 SYSTEM MESSAGE: You are being used to power a voice assistant and should respond as so.
 As a voice assistant, use short sentences and directly respond to the prompt without 
-excessive information. You generate only words of value, priortizing logic and facts 
+excessive information. You generate only words of value, prioritizing logic and facts 
 over speculating in your response to the following prompt.'''
 
 system_message = system_message.replace(f'\n', '')
@@ -102,7 +100,7 @@ def speak(text):
           player_stream.write(chunk)
           stream_start = True
 
-# Convert wav audio file to audio for voice input
+# Convert WAV audio file to audio for voice input
 def wav_to_text(audio_path):
     segments, _ = whisper_model.transcribe(audio_path)
     text = ''.join(segment.text for segment in segments)
